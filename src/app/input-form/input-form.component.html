@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <h1>Transcendent Endeavors Coding Challenge</h1>
+</div>
+<div class="wrapper">
+    <h3>Enter a number:</h3>
+</div>
+<div class="wrapper">
+    <input #n type="number" class="entry " (keypress)="$event.key === 'Enter' ? calculate(+n.value) : ''">
+    <button type="button" (click)="calculate(+n.value)">Save</button>
+</div>
+<div class="wrapper">
+    {{calculation.number}} x 2 = {{calculation.numberTimesTwo}} <br />
+    ({{calculation.number}} x 2)^2 = {{calculation.numberTimesTwoSquared}} <br />
+</div>
+<div class="wrapper">
+    {{notification}}
+</div>
